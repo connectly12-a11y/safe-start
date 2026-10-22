@@ -33,7 +33,7 @@ export default function Home() {
 
         {tab === "plan" ? <Planner /> : <Simulator />}
 
-        <a href="http://strikefinance.org/" target="_blank" rel="noopener noreferrer"
+        <a href="https://strikefinance.org/" target="_blank" rel="noopener noreferrer"
            style={{ ...btn, display: "block", textAlign: "center", textDecoration: "none", margin: "8px auto 0", maxWidth: 420, padding: 16, fontSize: 17 }}>
           Ready? Trade on Strike
         </a>

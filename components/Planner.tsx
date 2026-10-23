@@ -157,7 +157,7 @@ export default function Planner() {
                 : "This setup would have survived even the worst swing."}
             </p>
             <CandleChart candles={candles} liq={r.liquidationPrice} entry={ent} />
-            <ShareButton text={`At ${lev}x on ${sym}, the worst ${side === "long" ? "dip" : "spike"} on Strike last week went ${fmt(against, 1)}% against me and my cushion was ${fmt(room, 1)}%. ${against >= room ? "I would have been liquidated." : "I would have survived."} Tested with Safe Start, built for the Strike hackathon.`} />
+            <ShareButton text={`At ${lev}x on ${sym}, the worst ${side === "long" ? "dip" : "spike"} on Strike last week went ${fmt(against, 1)}% against me and my cushion was ${fmt(room, 1)}%. ${against >= room ? "I would have been liquidated." : "I would have survived."} Estimate from past results, not a forecast. Test your own with Safe Start:`} />
           </div>
         )}
       </div>
